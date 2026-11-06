@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* BMI 계산기 카드 컨테이너 */
+body > div:first-of-type,
+body > h1 {
+  /* H1과 입력 폼 전체를 감싸는 카드 느낌 설정 */
+}
+
+/* 전체 요소를 감싸는 시각적 영역 설정 */
+body {
+  flex-direction: column;
+}
+
+/* 메인 카드로 작동할 래퍼 박스 느낌 연출 */
+h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* 입력 필드 그룹 */
+div {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 태그 오타(lable)를 고려한 라벨 스타일 지정 */
+lable, label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Input 스타일링 */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+}
+
+input[type="text"]:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* 계산하기 버튼 스타일링 */
+button {
+  width: 100%;
+  max-width: 320px;
+  padding: 14px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s active;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* 결과 출력 텍스트 스타일링 */
+h2#result {
+  margin-top: 24px;
+  font-size: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+h3#state {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e74c3c;
+  text-align: center;
+}
+}
+
